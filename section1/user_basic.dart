@@ -16,4 +16,24 @@ void main() {
    //! Prints the new budget
    print('Dear $UserName your new budget is : $UserBudget');
    
+
+   print('------------------------------------------------------------------------------');
+
+   //todo : We will learn the doubles: /
+   double Archimedes = 3.14;
+   Archimedes/=2;
+   print('The  half value of Archimedes is: $Archimedes');
+
+  //? What if we try to divide a int value by another int value ?
+  // For example:
+  //todo UserBudget = UserBudget/2; //? This will give us an errord  because a value of type int cannot be asssign to a variable type of 'int'
+
+  //! It migh be early but quick hint: You can use toInt() method to convert a double value to an int value
+  UserBudget = (UserBudget/2).toInt();
+
+  print(UserBudget);
+  //* or you can use this instead:
+  UserBudget = UserBudget ~/ 2; //! This will act as like  the  the previous line of code but in a more easy way
+  print(UserBudget);
+
 }
