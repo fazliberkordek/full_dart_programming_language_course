@@ -29,7 +29,7 @@ void main() {
   //todo UserBudget = UserBudget/2; //? This will give us an errord  because a value of type int cannot be asssign to a variable type of 'int'
 
   //! It migh be early but quick hint: You can use toInt() method to convert a double value to an int value
-  UserBudget = (UserBudget/2).toInt();
+  //? UserBudget = (UserBudget/2).toInt();
 
   print(UserBudget);
   //* or you can use this instead:
