@@ -63,7 +63,24 @@ void main() {
     
   }
   
+  print('//.....//');
+
+  List<dynamic>users=  [100,'a',true];
+
+  for(var item in users){
+    print(item);
+  }
   
+  List<String> UserNames = ['Zoro','Brook','Luffy'] ;
+
+  UserNames.contains("Zoro"); //! true
+
+  for (var item in UserNames) {
+    if(item =='Zoro'){
+      print('Zoro is in the list');
+    }
+    
+  }
 }
   
   
