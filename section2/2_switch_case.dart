@@ -27,17 +27,16 @@ void main() {
       print('Failed');
   }
 
-  switch(IsSuccess){
+  switch (IsSuccess) {
     case true:
       print('Your child is : grantted acces for school');
       break;
     default:
       print('Your Child : Failed');
-
   }
- //! But we can create more readeable code with clean code statement:
- //* As you can see coding with the referances and the values  makes the  code more readable.
-  
+  //! But we can create more readeable code with clean code statement:
+  //* As you can see coding with the referances and the values  makes the  code more readable.
+
   final int ClassDegree = 0;
   bool isSuccess = false;
   const int HighSuccesValue = 2;
@@ -59,17 +58,16 @@ void main() {
       print('Failed');
   }
 
-  switch(IsSuccess){
+  switch (IsSuccess) {
     case true:
       print('Your child is : grantted acces for school');
       break;
     default:
       print('Your Child : Failed');
-
   }
-  
+
   //Todo Another use case of the switch case is most related with Strings.
-  //! Example:There is place we want to welcome the users or customers and add discounts for people named "John" for the JOHN STUART NAME DAY! 
+  //! Example:There is place we want to welcome the users or customers and add discounts for people named "John" for the JOHN STUART NAME DAY!
   //! And the rest of the user will be welcome with the Greetings.
   //! If the customer
 
@@ -82,35 +80,32 @@ void main() {
       break;
     case 'Stuart':
       print('Welcome to the store called only Stuart$names');
-      break;  
+      break;
     case 'John':
     case 'Stuart': //! Wheter the name is John or Stuart,the discount will be added. If the String includes Joihn or Stuart,the discount will be added.
-      print('Welcome to the John Name Day we will give you a half discount today. $names');
+      print(
+          'Welcome to the John Name Day we will give you a half discount today. $names');
       break;
-      case 'John Stuart':
-      print('Welcome to the store you will grabnted to full discount for only Today $names');
+    case 'John Stuart':
+      print(
+          'Welcome to the store you will grabnted to full discount for only Today $names');
       break;
     default:
       print('Welcome the store!! $names');
   }
 
-
   //! There is the clean code version of this code:
 
-   const SpecialUserName1 = 'John';
-   const SpecialUserName2 = 'Stuart';
-   String name = 'adawdawdaw';
+  const SpecialUserName1 = 'John';
+  const SpecialUserName2 = 'Stuart';
+  String name = 'adawdawdaw';
 
-   switch (name) {
-     case SpecialUserName1:
-     case SpecialUserName2:
-        print('Welcome to the store  $names');
-        break;
-     default:
-        print('Invalid UserName $name');
-   } 
-
-
-
+  switch (name) {
+    case SpecialUserName1:
+    case SpecialUserName2:
+      print('Welcome to the store  $names');
+      break;
+    default:
+      print('Invalid UserName $name');
+  }
 }
-
