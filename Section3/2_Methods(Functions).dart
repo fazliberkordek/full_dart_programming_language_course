@@ -63,7 +63,7 @@ int converthard({required int usermoney,int exchangeratio=14}){
   return usermoney ~/ exchangeratio;
 }
 
-String sayHello({String name="Ahmed"}){
-  print('sayHello Calisti');
+String sayHello({String name="John"}){
+  print('sayHello Worked');
   return "Hello $name";
 }
