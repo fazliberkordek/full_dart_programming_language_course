@@ -1,6 +1,7 @@
 void main() {
 
   //TODO lets do it without using classes
+  //! Lets start with creatin void main()
   //* The data have Name, Age,money, and customers's city
   final String CustomerName = 'Max';
   final int CustomerAge = 30;
@@ -80,11 +81,12 @@ for (var item in moneys) {
   } else {
     print('Welcome to the bank: $item');
   }
-  
-  
+
   bool result = controlMoney(item) == null? false: true;
   print(result);
 }
+
+
 
 
 }  
@@ -99,21 +101,16 @@ int? controlMoney (int? money) {
     return null;
   }
 
-  
-
- 
-
-  
 }
 
 //! Lets learn the classes
 
 class User {
   //todo first you have to  define the properties
-  String name;
-  int age;
-  int money;
-  String? city;
+  late final String name;
+  late final int age;
+  late final int money;
+  late final String? city;
 
   //! WELCOME TO NULL !!!! You can define a property but when you want to use it dart will consider the property as null and if you want to use operator you might get an error
 //* To understand the null safety pls make comment this class and  go above to understand null safety!!!!!!!  
